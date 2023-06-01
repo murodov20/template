@@ -1,15 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+	--size-14: 0.875rem;
+	--size-12: 0.75rem;
+	--size-10: 0.625rem;
+	--size-4: 0.25rem;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
+html {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 17px;
+}
+
+body {
+	background: #F6F7F8;
+	color: #2C2C2C;
+}
+
+a {
+	text-decoration: none;
+	color: #2C2C2C;
+}
+
+ul {
+	list-style: none;
+}
+
+
 .container {
 	margin: 0 auto;
 	max-width: 1200px;
 }
 
+
 /* asosiy */
+.relative {
+	position: relative;
+}
+
+.padding-32 {
+	padding: 2rem;
+}
+
+
+.padding-16 {
+	padding: 1rem;
+}
+
+.box {
+	background: white;
+	padding: 1rem;
+	box-shadow: 0 4px 54px rgba(0, 27, 98, 0.03);
+	border-radius: var(--size-12);
+}
+
 .flex {
 	display: flex;
 	width: 100%;
@@ -27,4 +80,57 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.has-flex-img img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*nav*/
+
+nav {
+	height: 90px;
+	background: white;
+}
+
+nav>.menu>a {
+	padding: 35px 10px;
+	font-size: 1rem;
+	line-height: 19px;
+}
+
+.raketa {
+	padding: 12px 28px 13px !important;
+	border: 1px solid #7B83CE;
+	border-radius: 40px;
+	height: 39px;
+}
+
+.logotip {
+	margin-left: 2rem;
+}
+
+.menu-right {
+	margin-right: 2rem;
+}
+
+.menu-right a {
+	padding-left: 0.9rem;
+	padding-right: 0.9rem;
+}
+
+.menu-right i {
+	font-size: 24px;
+}
+
+.raqam {
+	position: absolute;
+	background: #FF9F9F;
+	border-radius: 47px;
+	color: white;
+	padding: 2px 4px;
+	font-size: var(--size-10);
+	top: -10px;
+	right: 5px;
 }
