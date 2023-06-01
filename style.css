@@ -181,9 +181,15 @@ nav > .menu > a:hover {
 	border-radius: 10px;
 }
 
+.header {
+	margin-bottom: 20px;
+}
+
 /*box*/
 .box {
 	background: #FAFBFD;
+	border-radius: 8px;
+	margin-bottom: 20px;
 }
 .srochno {
 	position: absolute;
