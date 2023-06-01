@@ -136,13 +136,13 @@ nav {
 	background: white;
 }
 
-nav > .menu > a {
+nav>.menu>a {
 	padding: 35px 10px;
 	font-size: 1rem;
 	line-height: 1.25rem;
 }
 
-nav > .menu > a:hover {
+nav>.menu>a:hover {
 	color: #8FD8AC;
 	border-bottom: 3px solid #8FD8AC;
 }
@@ -217,14 +217,15 @@ main {
 	left: 1.5rem;
 }
 
-.box .column, .bottom-block {
+.box .column,
+.bottom-block {
 	overflow: hidden;
 }
 
 .box-right {
 	display: flex;
 	flex-direction: column;
-	border-left: 1px solid white;
+	border-left: 1px solid rgba(44, 44, 44, 0.1);
 }
 
 .box-right a {
@@ -256,12 +257,14 @@ main {
 	padding: 20px;
 }
 
-.bg-green, .box:hover {
+.bg-green,
+.box:hover {
 	background: #8FD8AC;
 	color: white;
 }
 
-.bg-green a, .box:hover a {
+.bg-green a,
+.box:hover a {
 	color: white;
 }
 
@@ -352,7 +355,7 @@ main {
 	color: white;
 }
 
-.soobshestvo > div {
+.soobshestvo>div {
 	height: 211px;
 	border-radius: 12px;
 	margin-right: 20px;
@@ -371,24 +374,28 @@ main {
 		font-size: 15px;
 	}
 }
+
 @media (max-width: 1024px) {
 	html {
 		font-size: 14px;
 	}
+
 	.box {
 		flex-wrap: wrap;
 	}
 
-	.box > div {
+	.box>div {
 		padding-right: 40px;
 	}
 
 	.box-right {
 		flex-basis: 100%;
-		border-top: 1px solid white;
+		border-top: 1px solid rgba(44, 44, 44, 0.1);
+		border-left: none;
 		flex-direction: row;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		justify-content: flex-start;
 	}
 }
 
@@ -402,5 +409,64 @@ main {
 		height: 156px;
 		margin-bottom: 20px;
 		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		flex-wrap: wrap;
+	}
+
+	.full-768 {
+		flex-basis: 100%;
+	}
+
+	.white-box {
+		overflow: hidden;
+	}
+
+	.box-cover-768 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.box {
+		flex: 0 0 auto;
+		width: 43%;
+	}
+
+	.box-right {
+		overflow: hidden;
+	}
+
+	.flex-768 {
+		display: flex;
+	}
+
+	.column-768 {
+		flex: 0 0 auto;
+		width: 50%;
+		overflow: hidden;
+	}
+
+	.resumelar {
+		height: auto;
+	}
+
+	.resumelar-absolute {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.resume {
+		width: auto;
+		margin-top: 20px;
+	}
+
+	.soobshestvo .column {
+		max-width: 100%;
+		height: auto;
 	}
 }
