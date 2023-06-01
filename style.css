@@ -276,11 +276,20 @@ main {
 .white-left-vstrechi {
 	background: white;
 	border-radius: 12px;
+	height: 260px;
+	overflow: hidden;
 }
 
-.white-left-vstrechi > .column {
+.vstrechi-absolute {
+	position: absolute;
+	display: flex;
+}
+
+.white-left-vstrechi .vstrechi {
 	padding: 20px;
 	overflow: hidden;
+	width: 200px;
+	flex: 0 0 auto;
 }
 
 .white-left-vstrechi p {
@@ -329,4 +338,22 @@ main {
 
 .resume h3 {
 	margin: 10px 0;
+}
+
+.white-text {
+	color: white;
+}
+
+.soobshestvo > div {
+	height: 211px;
+	border-radius: 12px;
+	margin-right: 20px;
+}
+
+.soobshestvo .img-text {
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
