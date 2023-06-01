@@ -224,6 +224,7 @@ main {
 .box-right {
 	display: flex;
 	flex-direction: column;
+	border-left: 1px solid white;
 }
 
 .box-right a {
@@ -255,12 +256,12 @@ main {
 	padding: 20px;
 }
 
-.bg-green {
+.bg-green, .box:hover {
 	background: #8FD8AC;
 	color: white;
 }
 
-.bg-green a {
+.bg-green a, .box:hover a {
 	color: white;
 }
 
@@ -268,15 +269,12 @@ main {
 	color: #8FD8AC;
 }
 
-.left-border {
-	border-left: 1px solid white;
-}
 
 /* chap tomon 1-blok, vstrechi*/
 .white-left-vstrechi {
 	background: white;
 	border-radius: 12px;
-	height: 260px;
+	height: 240px;
 	overflow: hidden;
 }
 
@@ -296,6 +294,7 @@ main {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 100%;
+	font-size: 14px;
 }
 
 .white-left-vstrechi h3 {
@@ -307,12 +306,21 @@ main {
 	border-right: 2px solid #F6F7F8;
 }
 
+.time {
+	background: #FFF7DA;
+	border-radius: 45px;
+	padding: 4px 10px;
+	position: absolute;
+	right: 10px;
+	font-size: var(--size-10);
+}
+
 /*resume*/
 
 .resumelar {
 	overflow: hidden;
 	position: relative;
-	height: 140px;
+	height: 125px;
 }
 
 .resumelar-absolute {
@@ -356,4 +364,43 @@ main {
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+@media (max-width: 1024px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (max-width: 1024px) {
+	html {
+		font-size: 14px;
+	}
+	.box {
+		flex-wrap: wrap;
+	}
+
+	.box > div {
+		padding-right: 40px;
+	}
+
+	.box-right {
+		flex-basis: 100%;
+		border-top: 1px solid white;
+		flex-direction: row;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 960px) {
+	.wrap-960 {
+		flex-wrap: wrap;
+	}
+
+	.full-960 {
+		flex-basis: 100%;
+		height: 156px;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
 }
