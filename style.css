@@ -175,6 +175,10 @@ nav > .menu > a:hover {
 
 /*main*/
 
+main {
+	padding: 12px 32px;
+}
+
 .right-knopka {
 	padding: var(--size-10);
 	background: white;
@@ -183,6 +187,7 @@ nav > .menu > a:hover {
 
 .header {
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 /*box*/
