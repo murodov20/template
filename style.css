@@ -31,6 +31,18 @@ a {
 	color: #2C2C2C;
 }
 
+h2 {
+	font-size: 1.5rem;
+	line-height: 29px;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
 ul {
 	list-style: none;
 }
@@ -43,6 +55,13 @@ ul {
 
 
 /* asosiy */
+.bold {
+	font-weight: bold;
+}
+.opacity-half {
+	opacity: 0.5;
+}
+
 .relative {
 	position: relative;
 }
@@ -51,17 +70,21 @@ ul {
 	padding: 2rem;
 }
 
+.padding-10 {
+	padding: var(--size-10);
+}
 
 .padding-16 {
 	padding: 1rem;
 }
 
-.box {
+.white-box {
 	background: white;
 	padding: 1rem;
 	box-shadow: 0 4px 54px rgba(0, 27, 98, 0.03);
 	border-radius: var(--size-12);
 }
+
 
 .flex {
 	display: flex;
@@ -70,6 +93,16 @@ ul {
 
 .column {
 	flex: 1;
+}
+
+.column-half {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.column-third {
+	flex: 0 0 auto;
+	width: 33.33%;
 }
 
 .flex-auto-width {
@@ -94,10 +127,15 @@ nav {
 	background: white;
 }
 
-nav>.menu>a {
+nav > .menu > a {
 	padding: 35px 10px;
 	font-size: 1rem;
-	line-height: 19px;
+	line-height: 1.25rem;
+}
+
+nav > .menu > a:hover {
+	color: #8FD8AC;
+	border-bottom: 3px solid #8FD8AC;
 }
 
 .raketa {
@@ -121,7 +159,7 @@ nav>.menu>a {
 }
 
 .menu-right i {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 .raqam {
@@ -133,4 +171,82 @@ nav>.menu>a {
 	font-size: var(--size-10);
 	top: -10px;
 	right: 5px;
+}
+
+/*main*/
+
+.right-knopka {
+	padding: var(--size-10);
+	background: white;
+	border-radius: 10px;
+}
+
+/*box*/
+.box {
+	background: #FAFBFD;
+}
+.srochno {
+	position: absolute;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.03);
+	border-radius: 36px;
+	padding: 4px 8px;
+	color: #2C2C2C;
+	top: -12px;
+	left: 1.5rem;
+}
+
+.box .column, .bottom-block {
+	overflow: hidden;
+}
+
+.box-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.box-right a {
+	padding: 8px;
+	font-size: 1rem;
+}
+
+.qirqilgan {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+.box .center-block {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.box .center-block span {
+	margin-right: 20px;
+}
+
+.margin-right-16 {
+	margin-right: 1rem;
+}
+
+.box .column {
+	padding: 20px;
+}
+
+.bg-green {
+	background: #8FD8AC;
+	color: white;
+}
+
+.bg-green a {
+	color: white;
+}
+
+.text-green {
+	color: #8FD8AC;
+}
+
+.left-border {
+	border-left: 1px solid white;
 }

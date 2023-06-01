@@ -7,37 +7,90 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 	      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-	      crossorigin="anonymous" referrerpolicy="no-referrer" />
+	      crossorigin="anonymous" referrerpolicy="no-referrer"/>
 	<link rel="stylesheet" href="/style.css">
 	<title>Document</title>
 </head>
 <body>
-	<nav class="flex">
-		<a href="/" class="logotip flex-auto-width flex-center">
-			<img src="/img/iconLogo.svg" alt="Recruterra">
+<!--nav-->
+<nav class="flex">
+	<a href="/" class="logotip flex-auto-width flex-center">
+		<img src="/img/iconLogo.svg" alt="Recruterra">
+	</a>
+	<div class="menu column flex-center">
+		<a href="#">Сводка</a>
+		<a href="#">Вакансии</a>
+		<a href="#">Встречи</a>
+		<a href="#">Базы резюме</a>
+		<a href="#">Сообщество</a>
+		<a href="#" class="raketa flex-center">
+			🚀
 		</a>
-		<div class="menu column flex-center">
-			<a href="#">Сводка</a>
-			<a href="#">Вакансии</a>
-			<a href="#">Встречи</a>
-			<a href="#">Базы резюме</a>
-			<a href="#">Сообщество</a>
-			<a href="#" class="raketa flex-center">
-				🚀
-			</a>
+	</div>
+	<div class="flex-auto-width menu-right flex-center">
+		<a href="#">
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</a>
+		<a class="relative" href="#">
+			<i class="fa-regular fa-message"></i>
+			<span class="raqam">99+</span>
+		</a>
+		<a class="profile-img" href="#">
+			<img src="/img/Profile.svg" alt="1">
+		</a>
+	</div>
+</nav>
+<!--main-->
+<main class="padding-32 flex">
+	<div class="column padding-10">
+		<div class="flex">
+			<div class="column">
+				<h2 class="bold">Открытые вакансии</h2>
+			</div>
+			<div class="flex-auto-width flex-center">
+				<a href="#" class="right-knopka">
+					<i class="fa-solid fa-angle-right"></i>
+				</a>
+			</div>
 		</div>
-		<div class="flex-auto-width menu-right flex-center">
-			<a href="#">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</a>
-			<a class="relative" href="#">
-				<i class="fa-regular fa-message"></i>
-				<span class="raqam">99+</span>
-			</a>
-			<a class="profile-img" href="#">
-				<img src="/img/Profile.svg" alt="1">
-			</a>
+		<div class="white-box">
+			<div class="box bg-green relative flex">
+				<span class="srochno">🔥 Срочно</span>
+				<div class="column">
+					<h3 class="qirqilgan">Дизайнер мобильных приложений iOS и Android</h3>
+					<div class="center-block">
+						<span>Без опыта</span>
+						<span>Удалённо</span>
+					</div>
+					<div class="bottom-block flex">
+						<span class="flex-auto-width margin-right-16">5 мая</span>
+						<span class="qirqilgan">Департамент информационных технологий</span>
+					</div>
+				</div>
+				<div class="column-third left-border flex-center box-right">
+					<a class="bold" href="#">14 новых</a>
+					<a href="#">5 в работе</a>
+					<a href="#">20 отказов</a>
+				</div>
+			</div>
 		</div>
-	</nav>
+	</div>
+	<div class="column padding-10">
+		<div class="flex">
+			<div class="column">
+				<h2 class="bold">
+					Встречи сегодня
+					<span class="opacity-half h2-span">Завтра</span>
+					<span class="opacity-half h2-span">На неделе</span>
+				</h2>
+			</div>
+			<div class="flex-auto-width flex-center">
+				<a href="#" class="right-knopka">
+					<i class="fa-solid fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</main>
 </body>
 </html>
