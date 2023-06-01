@@ -43,6 +43,7 @@ h3 {
 	line-height: 1.5rem;
 }
 
+
 ul {
 	list-style: none;
 }
@@ -58,6 +59,7 @@ ul {
 .bold {
 	font-weight: bold;
 }
+
 .opacity-half {
 	opacity: 0.5;
 }
@@ -93,6 +95,7 @@ ul {
 
 .column {
 	flex: 1;
+	overflow: hidden;
 }
 
 .column-half {
@@ -196,6 +199,7 @@ main {
 	border-radius: 8px;
 	margin-bottom: 20px;
 }
+
 .srochno {
 	position: absolute;
 	background: #FFFFFF;
@@ -260,4 +264,30 @@ main {
 
 .left-border {
 	border-left: 1px solid white;
+}
+
+/* chap tomon 1-blok, vstrechi*/
+.white-left-vstrechi {
+	background: white;
+	border-radius: 12px;
+}
+
+.white-left-vstrechi > .column {
+	padding: 20px;
+	overflow: hidden;
+}
+
+.white-left-vstrechi p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+.white-left-vstrechi h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.tabiy-border {
+	border-right: 2px solid #F6F7F8;
 }
